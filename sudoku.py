@@ -12,4 +12,4 @@ shape = (9, 3, 3)
 array = np.array([[[new_funcrion(x, y, z)for z in range(shape[2])] for y in range(shape[1])] for x in range(shape[0])])
 
 print(array)
-
+print('hello world')
