@@ -1,17 +1,11 @@
+
 import numpy as np
-import random as rd
-# 함수 정의s
-def new_funcrion(x, y, z):
-    a = rd.randrange(1,10)
-    return a
 
-# 배열의 형태 정의
-shape = (9, 3, 3)
 
-# 배열 생성
-array = np.array([[[new_funcrion(x, y, z)for z in range(shape[2])] for y in range(shape[1])] for x in range(shape[0])])
+array = np.arange(1, 82).reshape(9, 3, 3)
 
-print("____________ _____________ _____________")
+
+print("_______________ _______________ _______________")
 
 for i in range(array.shape[2]):
     for j in range(array.shape[1]):
@@ -21,7 +15,7 @@ for i in range(array.shape[2]):
                 print(array[k, j, i], end = " ")
         print("|", end = " ")
     print(" ")
-print("____________ _____________ _____________")
+print("_______________ _________________ ________________")
 for i in range(array.shape[2]):
     for j in range(array.shape[1]):
         for k in range(array.shape[0]):
@@ -30,7 +24,7 @@ for i in range(array.shape[2]):
                 print(array[k, j, i], end = " ")
         print("|", end = " ")
     print(" ")
-print("____________ _____________ _____________")
+print("_______________ _________________ ________________")
 for i in range(array.shape[2]):
     for j in range(array.shape[1]):
         for k in range(array.shape[0]):
@@ -39,3 +33,4 @@ for i in range(array.shape[2]):
                 print(array[k, j, i], end = " ")
         print("|", end = " ")
     print(" ")
+
