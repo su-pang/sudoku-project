@@ -39,3 +39,4 @@ for i in range(array.shape[2]):
                 print(array[k, j, i], end = " ")
         print("|", end = " ")
     print(" ")
+print("2024.07.15")
